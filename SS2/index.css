@@ -4,6 +4,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .max-width {
@@ -77,7 +78,7 @@ nav .menu a {
 }
 
 .content-menu {
-  width: 700px;
+  width: 800px;
   height: 200px;
   margin-left: 10%;
   margin-top: 8%;
@@ -91,6 +92,7 @@ nav .menu a {
   font-size: 50px;
   font-weight: 150;
   line-height: 60px;
+  text-transform: uppercase;
 }
 
 .content-menu .multi-button {
