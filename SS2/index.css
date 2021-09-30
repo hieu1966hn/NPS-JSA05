@@ -1,0 +1,51 @@
+/* cú pháp ép kiểu cho web */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+/* Home menu */
+
+.home-menu {
+  background-image: url('./image/hero.jpg');
+  height: 700px;
+  background-size: cover;
+}
+
+nav {
+  margin-left: 10%;
+}
+
+nav .max-width {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  display: inline-block;
+  padding: 0px 30px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+/* style logo */
+
+.max-width .logo img {
+  height: 80px;
+  width: 80px;
+}
+
+.max-width .menu {
+  width: 800px;
+  list-style: none;
+  line-height: 80px;
+}
