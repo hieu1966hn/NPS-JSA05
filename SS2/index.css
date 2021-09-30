@@ -18,6 +18,9 @@
   background-image: url('./image/hero.jpg');
   height: 700px;
   background-size: cover;
+  /* 2 */
+  position: relative;
+  z-index: 1;
 }
 
 nav {
@@ -48,4 +51,27 @@ nav .menu a {
   width: 800px;
   list-style: none;
   line-height: 80px;
+}
+
+/* opacity menu */
+
+.opacity-menu {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  /* lam mo the */
+  opacity: 0.7;
+  position: absolute;
+  z-index: 2;
+}
+
+/* code sau khi cho vao opacity */
+
+.max-width .logo {
+  z-index: 3;
+  /* background-color: white; */
+}
+
+.max-width .menu {
+  z-index: 4;
 }
