@@ -170,4 +170,44 @@ nav .menu a {
 
 .content-boxes .content-box i {
   color: orange;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.content-boxes .content-box p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 600;
+  /* text-align: justify; */
+}
+
+.content-boxes .content-box .title {
+  font-size: 20px;
+  text-align: left;
+  line-height: 40px;
+}
+
+/* Home banner */
+
+.home-banner {
+  width: 100%;
+  margin-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.home-banner .banner-image {
+  width: 25%;
+  height: 275px;
+  /* z-index: 1; */
+}
+
+.home-banner .banner-image img {
+  width: 100%;
+  height: 275px;
+  border: none;
+  /* display: block; */
 }
