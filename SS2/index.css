@@ -126,3 +126,48 @@ nav .menu a {
 }
 
 /* End SS2 */
+
+.max-width .orange-bar {
+  width: 100px;
+  height: 2px;
+  background-color: orange;
+  margin-top: 30px;
+}
+
+/* style hom-content */
+
+.home-content .max-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-content .max-width .about {
+  margin-top: 30px;
+}
+
+.max-width .about p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+/* Box content */
+
+.home-content .max-width .content-boxes {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-boxes .content-box {
+  width: 250px;
+  height: fit-content;
+}
+
+.content-boxes .content-box i {
+  color: orange;
+}
