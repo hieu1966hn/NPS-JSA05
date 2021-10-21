@@ -44,7 +44,21 @@ let animals = new Array("dog", "cat", "fish", "cat");
 
 // Phương thức IndexOf trong mảng: dùng để tìm kiếm vị trí phần tử trong mảng (dựa vào giá trị);
 // Tìm vị trí chú mèo "cat" bên trong mảng. Ta sử dụng indexOf
-let vitriMeo = animals.indexOf("cat");// tìm cat bên trong mảng và trả về vị trí đầu tiên tìm thấy
-console.log(vitriMeo);
+// let vitriMeo1 = animals.indexOf("cat");// 1
+// let vitriMeo2 = animals.indexOf("cat", vitriMeo1 + 1);// tìm cat bên trong mảng và trả về vị trí đầu tiên tìm thấy
+// console.log(vitriMeo2);//3
 
 //  Tìm vị trí chú mèo thứ 2 trong mảng???
+
+
+// Phương thức find trong mảng: dùng để tìm và trả về giá trị mảng đầu tiên thỏa mãn điều kiện
+let num = [1, 2, 3, 10];
+// lấy ra những phần tử có giá trị lớn hơn 2;
+// let lonHonHai = num.find(key => key > 2);
+let lonHonHai = num.find(function (key) {
+  return key > 2;
+});
+
+
+
+// Lấy ra toàn bộ phần tử có giá trị lớn hơn 2;
