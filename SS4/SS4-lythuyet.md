@@ -18,4 +18,21 @@ OpenSource là gì?
   - VD: $('p'): Chọn tất cả thẻ p trong tài liệu.
 
 - Tag ID: Đại diện cho thẻ có sẵn với 1 ID cụ thể trong DOM
+
   - $('#')
+
+- Luyện tập với bootstrap
+  Nhúng bootstrap vào web:
+
+  - Bước 1: vào trang chủ
+  - Bước 2: nhúng link css, js vào web
+
+- Bảng breakpoint nên dùng
+  Breakpoint Class infix Dimensions
+
+X-Small None <576px
+Small sm ≥576px
+Medium md ≥768px
+Large lg ≥992px
+Extra large xl ≥1200px
+Extra extra large xxl ≥1400px

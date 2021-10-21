@@ -45,3 +45,30 @@ $("button.continue").on("click", function () {
 // document.querySelector(".continue").addEventListener("click",function(){
 //   console.log("đã bấm vào đây");
 // })
+
+
+
+// done Jquery
+
+// sử dụng Jquery để submit form
+// const form = $("#infor")
+// $("#infor").on('submit', function (event) {
+//   event.preventDefault();
+//   // chặn sự kiện reload
+//   const data = {
+//     firstName: form.firstName.value
+//   }
+
+
+//   console.log(data);
+
+// })
+
+const form = document.getElementById('infor')
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const data = {
+    firstName: form.firstName.value
+  }
+  console.log(data);
+})
