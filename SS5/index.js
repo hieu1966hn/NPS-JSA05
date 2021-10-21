@@ -52,13 +52,19 @@ let animals = new Array("dog", "cat", "fish", "cat");
 
 
 // Phương thức find trong mảng: dùng để tìm và trả về giá trị mảng đầu tiên thỏa mãn điều kiện
-let num = [1, 2, 3, 10];
-// lấy ra những phần tử có giá trị lớn hơn 2;
-// let lonHonHai = num.find(key => key > 2);
-let lonHonHai = num.find(function (key) {
-  return key > 2;
-});
+// let num = [1, 2, 3, 10];
+// // lấy ra những phần tử có giá trị lớn hơn 2;
+// // let lonHonHai = num.find(key => key > 2);
+// let lonHonHai = num.find(function (key) {
+//   return key > 2;
+// });
 
 
 
-// Lấy ra toàn bộ phần tử có giá trị lớn hơn 2;
+// Lấy ra toàn bộ phần tử có giá trị lớn hơn 2; (trả kq về dưới dạng mảng mới);
+
+// let num = [1, 2, 3, 10];
+// let lonHonHai = num.map(function (key) {
+//   return key > 2
+// })
+// console.log(lonHonHai); // ???
