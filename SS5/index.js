@@ -1,5 +1,5 @@
 // Ôn tập lại về Array (mảng_danh sách): IndexOf, find, (duyệt mảng theo  cách nào??), map.
-// Ôn tập lại về Object (đối tượng): Khai báo, Thuộc tính, Phương thức, \
+// Ôn tập lại về Object (đối tượng): Khai báo, Thuộc tính, Phương thức, 
 // Local Storage: 
 // Maybe little API?
 
@@ -74,22 +74,51 @@
 
 
 /////////////////////// Object
-// khai báo object
-let obj = {};
+// // khai báo object
+// let obj = {};
 
-// Thêm thuộc tính vào object?
-obj.name = "Đức";
-obj.age = 17;
-obj.address = "Hà Nội";
+// // Thêm thuộc tính vào object?
+// obj.name = "Đức";
+// obj.age = 17;
+// obj.address = "Hà Nội";
 
-obj.say = () => {
-  alert("Xin chào. Tôi là Việt Đức");
+// obj.say = () => {
+//   alert("Xin chào. Tôi là Việt Đức");
+// }
+
+// // Update thuộc tính trong object
+// obj.name = "Bình";
+
+// // xóa thuộc tính trong object
+// delete obj.address;
+
+// console.log(obj);
+
+
+////////////// localStorage là gì??? Lưu trữ tại đâu??
+
+// LoalStorage hoạt động ntn???: Hoạt động giống hệt 1 Object: có key: value, 
+
+let obj = {
+  name: "Hiếu",
+  age: 24,
+  address: "Hà Nội"
 }
+// Khai báo localStorage??
+localStorage.setItem("object", JSON.stringify(obj)); //ép kiểu sang chuỗi 
 
-// Update thuộc tính trong object
-obj.name = "Bình";
+// Lấy ra giá trị thông qua từ khóa như nào
+let giaTriLayRaTuLocalStorage = JSON.parse(
+  localStorage.getItem("object")
+);
 
-// xóa thuộc tính trong object
-delete obj.address;
 
-console.log(obj);
+console.log(giaTriLayRaTuLocalStorage);
+
+// UPdate giá trị trong localStorage
+obj.game = "CS:GO";
+localStorage.setItem("object", JSON.stringify(obj)); //ép kiểu sang chuỗi 
+let giaTriLayRaTuLocalStorageLan2 = JSON.parse(
+  localStorage.getItem("object")
+);
+console.log(giaTriLayRaTuLocalStorageLan2);
