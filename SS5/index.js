@@ -9,7 +9,7 @@
 ///khai báo: 
 // let animals = [];  //C2
 
-let animals = new Array("dog", "cat", "fish", "cat");
+// let animals = new Array("dog", "cat", "fish", "cat");
 
 // console.log(animals);
 
@@ -68,3 +68,28 @@ let animals = new Array("dog", "cat", "fish", "cat");
 //   return key > 2
 // })
 // console.log(lonHonHai); // ???
+
+
+
+
+
+/////////////////////// Object
+// khai báo object
+let obj = {};
+
+// Thêm thuộc tính vào object?
+obj.name = "Đức";
+obj.age = 17;
+obj.address = "Hà Nội";
+
+obj.say = () => {
+  alert("Xin chào. Tôi là Việt Đức");
+}
+
+// Update thuộc tính trong object
+obj.name = "Bình";
+
+// xóa thuộc tính trong object
+delete obj.address;
+
+console.log(obj);
