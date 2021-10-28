@@ -112,13 +112,21 @@ let giaTriLayRaTuLocalStorage = JSON.parse(
   localStorage.getItem("object")
 );
 
-
 console.log(giaTriLayRaTuLocalStorage);
 
 // UPdate giá trị trong localStorage
 obj.game = "CS:GO";
+
+
+
 localStorage.setItem("object", JSON.stringify(obj)); //ép kiểu sang chuỗi 
 let giaTriLayRaTuLocalStorageLan2 = JSON.parse(
   localStorage.getItem("object")
 );
+
 console.log(giaTriLayRaTuLocalStorageLan2);
+
+
+
+
+
