@@ -43,7 +43,13 @@ searchInput.addEventListener('change', function (event) {
       // Đổi từ: m/s = (km/h)/3.6
 
     })
-});
+    .catch(err => {
+      console.log(err);
+      if (cityName.innerHTML === DEFAULT_VALUE) {
+        temperature.innerHTML = DEFAULT_VALUE
+      }
+    })
+})
 
 
 
