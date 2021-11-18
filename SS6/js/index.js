@@ -25,6 +25,9 @@ searchInput.addEventListener('change', function (event) {
   fetch(`https://api.openweathermap.org/data/2.5/weather?q=${event.target.value}&appid=${APP_ID}&units=metric&lang=vi`)
     .then(async function (res) {
       const data = await res.json();
+      // đợi res.json() chạy xong (hay còn gọi là đợi web openweathermap trả kết quả về rồi mới chạy tiếp lệnh dưới)
+
+
       console.log('searchInput', data);
 
       cityName.innerHTML = data.name || DEFAULT_VALUE
