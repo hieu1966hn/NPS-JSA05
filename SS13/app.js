@@ -40,14 +40,24 @@ register.addEventListener("submit", (e) => {
     }
     // ko có lỗi nào liên quan tới đăng ký. Cho phép lưu trữ tren localStorage
     else {
-        localStorage.setItem("users",
-            JSON.stringify(
-                [
-                    {
-                        email: email.value.trim(),
-                        pw: pw.value.trim()
-                    }
-                ]));
+        if (localStorage.users) {
+            let users = JSON.parse(localStorage.users)
+            users.push({
+                email: email.value.trim(),
+                pw: pw.value.trim()
+            })
+            localStorage.setItem("users", JSON.stringify(users));
+        }
+        else {
+            localStorage.setItem("users",
+                JSON.stringify(
+                    [
+                        {
+                            email: email.value.trim(),
+                            pw: pw.value.trim()
+                        }
+                    ]));
+        }
         location.replace("./Login.html")
         console.log("hello");
     }
@@ -56,3 +66,4 @@ register.addEventListener("submit", (e) => {
     TH2: là không có ký tự viết thường -> in ra thông báo lỗi.
      */
 })
+

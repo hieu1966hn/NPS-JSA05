@@ -8,8 +8,8 @@
   </head>
   <body>
     <!-- Trang đăng nhap -->
-    <div class="register">
-      <form>
+    <div class="login">
+      <form id="login-info">
         <h1>LOGIN</h1>
         <label for="email">Email</label>
         <input
@@ -27,10 +27,13 @@
         />
 
         <br />
-        <button type="submit" onclick="check()">Login</button>
+        <button type="submit">Login</button>
+        <span
+          ><a href="./register.html">Don't have an account. Register?</a></span
+        >
       </form>
     </div>
 
-    <script src="./app.js"></script>
+    <script src="./login.js"></script>
   </body>
 </html>
