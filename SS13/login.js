@@ -16,8 +16,8 @@ login.addEventListener("submit", (event) => {
         &&
         index.pw == pw.value.trim()
     )
-    console.log(check);
-    check.indexOf("true")
+    console.log(check);// [false,false,false, true]
+  
 
     if (check.indexOf("true")) {
         // alert("You are log in");
